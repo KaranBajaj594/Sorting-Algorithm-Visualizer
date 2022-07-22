@@ -23,6 +23,10 @@
         <nav id="nav">
             <div class="nav-header">
 
+                <div>
+                    <button class="Sorting newarray" onclick="newArray()">Generate New Array</button>
+                </div>
+
                 <div class="span-head">Select Array-Size:
                  <select name="Select_Array_Size" id="Select_Array_Size" class="design-box" onchange="target(this)">
                      <optgroup label="Array-Size">
@@ -51,26 +55,26 @@
                 </div>
 
                 <div class="span-head">Select Speed:
-                    <select name="Select_Speed" id="Select_Speed"  class="design-box">
+                    <select name="Select_Speed" id="Select_Speed"  class="design-box" onchange="speed(this)">
                         <optgroup label="Speed">
                          <option value="0"  class="inner-opt">Select</option>
-                         <option value="0.1" class="inner-opt">0.1x</option>
-                         <option value="0.25" class="inner-opt">0.25x</option>
-                         <option value="0.75" class="inner-opt">0.75x</option>
-                         <option value="1.0" class="inner-opt">1.0x</option>
-                         <option value="1.15" class="inner-opt">1.15x</option>
-                         <option value="1.5" class="inner-opt">1.5x</option>
-                         <option value="2.0" class="inner-opt">2.0x</option>
+                         <option value="70" class="inner-opt">0.1x</option>
+                         <option value="100" class="inner-opt">0.25x</option>
+                         <option value="150" class="inner-opt">0.75x</option>
+                         <option value="200" class="inner-opt">1.0x</option>
+                         <option value="250" class="inner-opt">1.15x</option>
+                         <option value="290" class="inner-opt">1.5x</option>
+                         <option value="350" class="inner-opt">2.0x</option>
                        </optgroup>
                     </select>
                    </div>
 
             <div class="buttons">
                 <button class="Bubble   Sorting " onclick="bubbleSort()">Bubble Sort</button>
-                <button class="Selection Sorting">Selection Sort</button>
-                <button class="Insertion  Sorting">Insertion Sort</button>
-                <button class="Merge  Sorting">Merge Sort</button>
-                <button class="Quick Sorting">Quick Sort</button>
+                <button class="Selection Sorting" onclick="selectionSort()">Selection Sort</button>
+                <button class="Insertion  Sorting" onclick="insertionSort()">Insertion Sort</button>
+                <button class="Merge  Sorting" onclick="mergeSort()">Merge Sort</button>
+                <button class="Quick Sorting"  onclick="quickSort()">Quick Sort</button>
             </div>
         </div>
     </nav>
@@ -89,6 +93,11 @@
 
 </div>
 
-<script src="main.js"></script>
+<script src="./js_files/main.js"></script>
+<script src="./js_files/bubbleSort.js"></script>
+<script src="./js_files/selectionSort.js"></script>
+<script src="./js_files/insertionSort.js"></script>
+<script src="./js_files/mergeSort.js"></script>
+<script src="./js_files/quickSort.js"></script>
 </body>
 </html>
